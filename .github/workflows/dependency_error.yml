@@ -1,8 +1,11 @@
 name: dependency-error
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
+  workflow_dispatch:
 jobs:
   check-dependencies:
     runs-on: ubuntu-latest
