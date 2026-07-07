@@ -1,0 +1,17 @@
+name: docker-error
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          # This workflow is intentionally designed to fail during docker build.
+          # The Dockerfile references a non-existent base image.
+          docker build -t demo-app .

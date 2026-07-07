@@ -1,0 +1,18 @@
+name: dependency-error
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Python dependencies
+        run: |
+          # This workflow is intentionally designed to fail during dependency installation.
+          # requirements.txt contains an invalid package version that cannot be resolved.
+          python -m pip install --upgrade pip
+          python -m pip install --no-cache-dir -r requirements.txt

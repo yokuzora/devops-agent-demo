@@ -1,0 +1,22 @@
+name: permission-error
+
+on:
+  workflow_dispatch:
+
+jobs:
+  permission-check:
+    runs-on: ubuntu-latest
+    env:
+      DEMO_SECRET: ${{ secrets.DEMO_SECRET }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate required secret
+        run: |
+          # This workflow is intentionally designed to fail because DEMO_SECRET is not configured.
+          if [ -z "${DEMO_SECRET}" ]; then
+            echo "Required secret DEMO_SECRET is missing"
+            exit 1
+          fi
+          echo "Secret found"

@@ -1,0 +1,16 @@
+name: python-error
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run application
+        run: |
+          # This workflow is intentionally designed to fail with ModuleNotFoundError.
+          python app.py
