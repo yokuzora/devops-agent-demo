@@ -1,6 +1,11 @@
 name: permission-error
 
+
 on:
+  push:
+    branches:
+      - main
+
   workflow_dispatch:
 
 jobs:
