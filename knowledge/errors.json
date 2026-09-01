@@ -1,0 +1,217 @@
+[
+    {
+        "keyword": "No matching distribution found",
+        "category": "Dependency Error",
+        "root_cause": "Invalid package version",
+        "suggestions": [
+            "Check requirements.txt",
+            "Verify package version exists",
+            "Update dependency version"
+        ]
+    },
+    {
+        "keyword": "ModuleNotFoundError",
+        "category": "Dependency Error",
+        "root_cause": "Missing Python dependency",
+        "suggestions": [
+            "Install missing package",
+            "Update requirements.txt"
+        ]
+    },
+    {
+        "keyword": "ImportError",
+        "category": "Dependency Error",
+        "root_cause": "Import failure",
+        "suggestions": [
+            "Check package installation",
+            "Verify virtual environment"
+        ]
+    },
+    {
+        "keyword": "permission denied",
+        "category": "Permission Error",
+        "root_cause": "Insufficient permissions",
+        "suggestions": [
+            "Check file permissions",
+            "Run with correct privileges"
+        ]
+    },
+    {
+        "keyword": "access denied",
+        "category": "Permission Error",
+        "root_cause": "Access blocked",
+        "suggestions": [
+            "Verify IAM policy",
+            "Check credentials"
+        ]
+    },
+    {
+        "keyword": "Connection refused",
+        "category": "Network Error",
+        "root_cause": "Remote service unavailable",
+        "suggestions": [
+            "Check server status",
+            "Verify firewall",
+            "Verify host and port"
+        ]
+    },
+    {
+        "keyword": "timeout",
+        "category": "Network Error",
+        "root_cause": "Network timeout",
+        "suggestions": [
+            "Retry request",
+            "Check connectivity",
+            "Increase timeout"
+        ]
+    },
+    {
+        "keyword": "ImagePullBackOff",
+        "category": "Docker Error",
+        "root_cause": "Container image unavailable",
+        "suggestions": [
+            "Verify image tag",
+            "Verify registry",
+            "Check image exists"
+        ]
+    },
+    {
+        "keyword": "CrashLoopBackOff",
+        "category": "Kubernetes Error",
+        "root_cause": "Container repeatedly crashing",
+        "suggestions": [
+            "Check pod logs",
+            "Verify startup command",
+            "Check resource limits"
+        ]
+    },
+    {
+        "keyword": "OOMKilled",
+        "category": "Kubernetes Error",
+        "root_cause": "Out of memory",
+        "suggestions": [
+            "Increase memory limits",
+            "Optimize application"
+        ]
+    },
+    {
+        "keyword": "docker build failed",
+        "category": "Docker Error",
+        "root_cause": "Docker build failed",
+        "suggestions": [
+            "Check Dockerfile",
+            "Verify build context"
+        ]
+    },
+    {
+        "keyword": "manifest unknown",
+        "category": "Docker Error",
+        "root_cause": "Docker image missing",
+        "suggestions": [
+            "Verify image name",
+            "Verify tag"
+        ]
+    },
+    {
+        "keyword": "Authentication failed",
+        "category": "Authentication Error",
+        "root_cause": "Invalid credentials",
+        "suggestions": [
+            "Verify credentials",
+            "Check secrets"
+        ]
+    },
+    {
+        "keyword": "Unauthorized",
+        "category": "Authentication Error",
+        "root_cause": "Unauthorized request",
+        "suggestions": [
+            "Verify token",
+            "Check permissions"
+        ]
+    },
+    {
+        "keyword": "SSL certificate",
+        "category": "SSL Error",
+        "root_cause": "Certificate validation failed",
+        "suggestions": [
+            "Verify certificate",
+            "Update CA bundle"
+        ]
+    },
+    {
+        "keyword": "npm ERR!",
+        "category": "Node Error",
+        "root_cause": "Node package installation failed",
+        "suggestions": [
+            "Delete node_modules",
+            "Run npm install again"
+        ]
+    },
+    {
+        "keyword": "Gradle build failed",
+        "category": "Gradle Error",
+        "root_cause": "Gradle compilation failure",
+        "suggestions": [
+            "Check build.gradle",
+            "Refresh dependencies"
+        ]
+    },
+    {
+        "keyword": "BUILD FAILURE",
+        "category": "Maven Error",
+        "root_cause": "Maven build failed",
+        "suggestions": [
+            "Run mvn clean install",
+            "Check dependencies"
+        ]
+    },
+    {
+        "keyword": "Segmentation fault",
+        "category": "Runtime Error",
+        "root_cause": "Invalid memory access",
+        "suggestions": [
+            "Inspect native code",
+            "Review memory usage"
+        ]
+    },
+    {
+        "keyword": "FileNotFoundError",
+        "category": "File Error",
+        "root_cause": "Missing file",
+        "suggestions": [
+            "Verify file path",
+            "Check file exists"
+        ]
+    },
+    {
+    "keyword": "docker.io/library",
+    "category": "Docker Error",
+    "root_cause": "Invalid Docker image tag",
+    "suggestions": [
+        "Check the Dockerfile",
+        "Verify the image tag exists",
+        "Use a valid Docker image version"
+    ]
+    },
+    {
+    "keyword": "Required secret",
+    "category": "Permission Error",
+    "root_cause": "Missing GitHub Actions secret",
+    "suggestions": [
+        "Add the required GitHub Secret",
+        "Verify the secret name matches the workflow",
+        "Check repository secrets configuration"
+    ]
+    },
+    {
+    "keyword": "secret is missing",
+    "category": "Permission Error",
+    "root_cause": "Required GitHub Secret not configured",
+    "suggestions": [
+        "Create the missing secret in GitHub",
+        "Verify repository Actions secrets",
+        "Update the workflow configuration"
+    ]
+    }
+]

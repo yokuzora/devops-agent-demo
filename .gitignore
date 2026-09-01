@@ -1,5 +1,23 @@
 __pycache__/
 *.py[cod]
-*.log
+
+# Virtual environments
+venv/
 .venv/
+
+# Environment variables
 .env
+
+# Pytest
+.pytest_cache/
+
+# Logs
+*.log
+logs/
+
+# Generated reports
+reports/*.txt
+
+# Databases
+*.db
+database/*.db

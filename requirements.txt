@@ -1,1 +1,5 @@
-pandas==99.0
+pandas
+pytest
+requests
+streamlit
+streamlit-autorefresh

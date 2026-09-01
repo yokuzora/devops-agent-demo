@@ -1,9 +1,5 @@
-import missing_library
-
-
-def main():
-    print("This script is intended to fail with ModuleNotFoundError.")
-
-
-if __name__ == "__main__":
-    main()
+print("=" * 50)
+print("DevOps Investigation Agent")
+print("Version 1.0")
+print("Status : Running")
+print("=" * 50)
