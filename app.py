@@ -1,0 +1,5 @@
+print("=" * 50)
+print("DevOps Investigation Agent")
+print("Version 1.0")
+print("Status : Running")
+print("=" * 50)

@@ -1,0 +1,7 @@
+Step 5/10 : FROM ubuntu:latest
+
+manifest for ubuntu:latest123 not found
+
+docker build failed
+
+Process completed with exit code 1
