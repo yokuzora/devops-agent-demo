@@ -4,7 +4,9 @@ def send_alert(category, root_cause, suggestions):
     print()
 
     print("=" * 60)
-    print("🚨 DEVOPS ALERT")
+    # Keep terminal alerts compatible with legacy Windows encodings (for
+    # example CP1252), which cannot render the original emoji safely.
+    print("[ALERT] DEVOPS ALERT")
     print("=" * 60)
 
     print()
